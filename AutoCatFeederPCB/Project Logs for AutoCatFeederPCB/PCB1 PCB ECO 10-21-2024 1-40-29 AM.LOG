@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=Diode1-1
+Change Description: Unknown Component : Diode1
+Add Pin To Net: Unknown Pin: Pin Diode1-1
+Add Pin To Net: Unknown Pin: Pin Diode1-2
+Add Class: Class already exists: 5V DC/DC

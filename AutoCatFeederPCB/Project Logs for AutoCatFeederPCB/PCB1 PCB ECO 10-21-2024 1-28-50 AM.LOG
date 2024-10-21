@@ -1,0 +1,31 @@
+Change Component Footprint: Designator=Cp Old Footprint=FP-C0603-030-0_03-IPC_A New Footprint=FP-C0603-030-0_03-IPC_A
+Added Component: Designator=Cboot(CAPC1005X55X25LL05T10)
+Added Component: Designator=Cin(FP-GRM32-IPC_A)
+Added Component: Designator=CSS(CAPC1005X55X25LL05T10)
+Added Component: Designator=Inductor1(WE-TI-L)
+Added Component: Designator=L1(FP-CB2012-IPC_A)
+Added Component: Designator=Rfbb(RESC1608X55X25LL10T15)
+Added Component: Designator=Rfbt(RESC0603(1608)_N)
+Add Pin To Net: Unknown Pin: Pin Cboot-1
+Add Pin To Net: Unknown Pin: Pin Cboot-2
+Add Pin To Net: Unknown Pin: Pin Cin-1
+Add Pin To Net: Unknown Pin: Pin Cin-2
+Add Pin To Net: Unknown Pin: Pin CSS-1
+Add Pin To Net: Unknown Pin: Pin CSS-2
+Add Pin To Net: Unknown Pin: Pin Diode1-0
+Add Pin To Net: Unknown Pin: Pin Inductor1-1
+Add Pin To Net: Unknown Pin: Pin Inductor1-2
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin Rfbb-1
+Add Pin To Net: Unknown Pin: Pin Rfbb-2
+Add Pin To Net: Unknown Pin: Pin Rfbt-1
+Add Pin To Net: Unknown Pin: Pin Rfbt-2
+Add Class: Class already exists: 5V DC/DC
+Add Class Member: Failed to add class member : Component Cboot 100nF
+Add Class Member: Failed to add class member : Component Cin 22uF
+Add Class Member: Failed to add class member : Component CSS 8.2nF
+Add Class Member: Failed to add class member : Component Inductor1 93mH
+Add Class Member: Failed to add class member : Component L1 22uH
+Add Class Member: Failed to add class member : Component Rfbb RC0603FR-0782KL
+Add Class Member: Failed to add class member : Component Rfbt 430K 1% 0603(1608)
