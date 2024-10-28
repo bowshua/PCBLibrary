@@ -136,7 +136,7 @@ DocumentUniqueId=TVCDBHFI
 
 [Document6]
 DocumentPath=Sensors5V.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -170,9 +170,9 @@ DocumentUniqueId=CBAWKLOI
 
 [Document8]
 DocumentPath=MCU.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
-AnnotationIndexControlEnabled=1
+AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=4
