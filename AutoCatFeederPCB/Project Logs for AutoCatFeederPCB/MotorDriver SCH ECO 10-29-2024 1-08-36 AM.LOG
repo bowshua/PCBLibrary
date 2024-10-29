@@ -1,0 +1,14 @@
+Change Component Designator: Old Designator=30k Pot New Designator=2
+Change Component Designator: Old Designator=50kOhm New Designator=1
+Change Component Designator: Old Designator=Cbyp New Designator=Cbyp1
+Change Component Designator: Old Designator=Cp New Designator=Cp1
+Change Component Designator: Old Designator=Cpow2 New Designator=Cpow1
+Change Component Designator: Old Designator=Cpow New Designator=Cpow2
+Change Component Designator: Old Designator=Cvmot New Designator=Cvmot1
+Change Component Designator: Old Designator=Motor Block New Designator=Motor Block1
+Change Component Designator: Old Designator=Motor Driver New Designator=Motor Driver1
+Change Component Designator: Old Designator=R1 New Designator=R13
+Change Component Designator: Old Designator=R2 New Designator=R14
+Change Component Designator: Old Designator=Rfault New Designator=Rfault1
+Change Component Designator: Old Designator=Rhome New Designator=Rhome1
+Change Component Designator: Old Designator=Rpow New Designator=Rpow1

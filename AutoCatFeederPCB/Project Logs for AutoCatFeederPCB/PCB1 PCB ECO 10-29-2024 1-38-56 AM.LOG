@@ -1,0 +1,7 @@
+Removed Member From Class: ClassName=Motor Driver Member=R20
+Removed Member From Class: ClassName=Motor Driver Member=R21
+Removed Member From Class: ClassName=Motor Driver Member=R23
+Added Member To Class: ClassName=Motor Driver Member=Component R13 10kOhm
+Added Member To Class: ClassName=Motor Driver Member=Component R15 1MOhm
+Added Member To Class: ClassName=Motor Driver Member=Component R16 200mOhm
+Added Member To Class: ClassName=Motor Driver Member=Component R18

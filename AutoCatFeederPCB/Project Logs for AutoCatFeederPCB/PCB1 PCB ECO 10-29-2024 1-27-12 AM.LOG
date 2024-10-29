@@ -1,0 +1,25 @@
+Change Component Footprint: Designator=C6 Old Footprint=CAPC1005X55X25LL05T10 New Footprint=CAPC1005X55X25LL05T10
+Change Component Footprint: Designator=C10 Old Footprint=CAPC1005X55X25LL05T10 New Footprint=CAPC1005X55X25LL05T10
+Change Component Footprint: Designator=Cp1 Old Footprint=FP-C0603-030-0_03-IPC_A New Footprint=FP-C0603-030-0_03-IPC_A
+Change Component Footprint: Designator=L3 Old Footprint=FP-CB2012-IPC_A New Footprint=FP-CB2012-IPC_A
+Change Component Footprint: Designator=C4 Old Footprint=FP-GRM32-IPC_A New Footprint=FP-GRM32-IPC_A
+Change Component Footprint: Designator=R9 Old Footprint=RESC0603(1608)_N New Footprint=RESC0603(1608)_N
+Change Component Footprint: Designator=R10 Old Footprint=RESC1608X55X25LL10T15 New Footprint=RESC1608X55X25LL10T15
+Change Component Footprint: Designator=L2 Old Footprint=WE-TI-L New Footprint=WE-TI-L
+Added Component: Designator=Jack1(694102107102)
+Add Pin To Net: Unknown Pin: Pin Jack1-1
+Add Pin To Net: Unknown Pin: Pin Jack1-2
+Add Pin To Net: Unknown Pin: Pin Jack1-3
+Add Pin To Net: Unknown Pin: Pin U1-1
+Add Pin To Net: Unknown Pin: Pin U1-2
+Add Pin To Net: Unknown Pin: Pin U1-3
+Add Pin To Net: Unknown Pin: Pin U1-4
+Add Pin To Net: Unknown Pin: Pin U1-5
+Add Pin To Net: Unknown Pin: Pin U1-6
+Add Pin To Net: Unknown Pin: Pin U1-7
+Add Pin To Net: Unknown Pin: Pin U1-8
+Add Pin To Net: Unknown Pin: Pin U1-9
+Add Pin To Net: Unknown Pin: Pin U1-10
+Add Pin To Net: Unknown Pin: Pin U1-11
+Add Class Member: Failed to add class member : Component Jack1 694102107102
+Add Class Member: Failed to add class member : Component U1 TPS61288RQQR

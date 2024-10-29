@@ -1,0 +1,31 @@
+Removed Member From Class: ClassName=Motor Driver Member=Rhome1
+Change Component Designator: OldDesignator=1 NewDesignator=R18
+Change Component Designator: OldDesignator=2 NewDesignator=R19
+Change Component Designator: OldDesignator=C21 NewDesignator=C27
+Change Component Designator: OldDesignator=Cbyp1 NewDesignator=C26
+Change Component Designator: OldDesignator=Cp1 NewDesignator=C21
+Change Component Designator: OldDesignator=Cpow1 NewDesignator=C22
+Change Component Designator: OldDesignator=Cpow2 NewDesignator=C23
+Change Component Designator: OldDesignator=Cpow3 NewDesignator=C25
+Change Component Designator: OldDesignator=Cvmot1 NewDesignator=C24
+Change Component Designator: OldDesignator=Motor Block1 NewDesignator=TB3
+Change Component Designator: OldDesignator=R13 NewDesignator=R14
+Change Component Designator: OldDesignator=R14 NewDesignator=R16
+Change Component Designator: OldDesignator=R15 NewDesignator=R20
+Change Component Designator: OldDesignator=R16 NewDesignator=R21
+Change Component Designator: OldDesignator=R17 NewDesignator=R22
+Change Component Designator: OldDesignator=R18 NewDesignator=R23
+Change Component Designator: OldDesignator=Rfault1 NewDesignator=R17
+Change Component Designator: OldDesignator=Rhome1 NewDesignator=R13
+Change Component Designator: OldDesignator=Rpow1 NewDesignator=R15
+Change Net Name : Old Net Name=Net1_1 New Net Name=NetC26_1
+Change Net Name : Old Net Name=Net1_2 New Net Name=NetMotor Driver1_12
+Change Net Name : Old Net Name=NetC21_1 New Net Name=NetC27_1
+Change Net Name : Old Net Name=NetCp1_1 New Net Name=NetC21_1
+Change Net Name : Old Net Name=NetCp1_2 New Net Name=NetC21_2
+Change Net Name : Old Net Name=NetCpow2_2 New Net Name=NetC23_2
+Change Net Name : Old Net Name=NetMotor Block1_1 New Net Name=NetMotor Driver1_5
+Change Net Name : Old Net Name=NetMotor Block1_2 New Net Name=NetMotor Driver1_7
+Change Net Name : Old Net Name=NetMotor Block1_3 New Net Name=NetMotor Driver1_8
+Change Net Name : Old Net Name=NetMotor Block1_4 New Net Name=NetMotor Driver1_10
+Added Member To Class: ClassName=Motor Driver Member=Component R16 200mOhm

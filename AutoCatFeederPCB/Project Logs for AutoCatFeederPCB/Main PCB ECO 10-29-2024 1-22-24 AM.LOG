@@ -1,0 +1,25 @@
+Removed Member From Class: ClassName=Main Power Member=L3
+Removed Member From Class: ClassName=Main Power Member=R13
+Removed Member From Class: ClassName=Main Power Member=R14
+Added Component: Designator=Jack1(694102107102)
+Add Pin To Net: Unknown Pin: Pin Jack1-1
+Add Pin To Net: Unknown Pin: Pin Jack1-2
+Add Pin To Net: Unknown Pin: Pin Jack1-3
+Add Pin To Net: Unknown Pin: Pin U1-1
+Add Pin To Net: Unknown Pin: Pin U1-2
+Add Pin To Net: Unknown Pin: Pin U1-3
+Add Pin To Net: Unknown Pin: Pin U1-4
+Add Pin To Net: Unknown Pin: Pin U1-5
+Add Pin To Net: Unknown Pin: Pin U1-6
+Add Pin To Net: Unknown Pin: Pin U1-7
+Add Pin To Net: Unknown Pin: Pin U1-8
+Add Pin To Net: Unknown Pin: Pin U1-9
+Add Pin To Net: Unknown Pin: Pin U1-10
+Add Pin To Net: Unknown Pin: Pin U1-11
+Add Class: Class already exists: Motor Driver
+Added Member To Class: ClassName=Motor Driver Member=Component Cpow2 0.1uF
+Add Class Member: Failed to add class member : Component Jack1 694102107102
+Added Member To Class: ClassName=Main Power Member=Component L1 XAL7070-222MEB
+Added Member To Class: ClassName=Main Power Member=Component R1 169kOhm
+Added Member To Class: ClassName=Main Power Member=Component R2 CRCW0805931KFKEA
+Add Class Member: Failed to add class member : Component U1 TPS61288RQQR

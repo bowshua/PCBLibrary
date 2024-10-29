@@ -1,0 +1,22 @@
+Added Component: Designator=Jack1(694102107102)
+Added Component: Designator=U1(TPS61288RQQR)
+Add Pin To Net: Unknown Pin: Pin Jack1-1
+Add Pin To Net: Unknown Pin: Pin Jack1-2
+Add Pin To Net: Unknown Pin: Pin Jack1-3
+Added Pin To Net: NetName=NetR2_2 Pin=U1-1
+Added Pin To Net: NetName=NetR2_2 Pin=U1-1
+Added Pin To Net: NetName=NetC9_1 Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=NetC1_1 Pin=U1-4
+Added Pin To Net: NetName=NetC4_2 Pin=U1-5
+Added Pin To Net: NetName=NetC4_2 Pin=U1-5
+Added Pin To Net: NetName=NetC2_1 Pin=U1-6
+Added Pin To Net: NetName=NetC2_1 Pin=U1-7
+Added Pin To Net: NetName=NetC2_1 Pin=U1-7
+Added Pin To Net: NetName=NetC1_2 Pin=U1-8
+Added Pin To Net: NetName=NetC1_1 Pin=U1-9
+Added Pin To Net: NetName=GND Pin=U1-10
+Added Pin To Net: NetName=NetC8_1 Pin=U1-11
+Add Class Member: Failed to add class member : Component Jack1 694102107102
+Added Member To Class: ClassName=Main Power Member=Component U1 TPS61288RQQR
