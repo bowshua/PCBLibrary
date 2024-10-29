@@ -1,0 +1,429 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10/29/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3:19:55 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc">C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">23</td></tr>
+</table>
+</td>
+</table><a name="IDB3HFL44BOSMWLI3IHZWC100X3EIJQGGTRWKZ2PECXKTR2X1UVVHE"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFTIZ3FOOQ1TBDV1QZRKS4PHIOBJCCJO5VSQA30JNNSPQSX00JMUP">Clearance Constraint (Gap=5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYS0NZSDQ2FXUFDZG5EC5BR23AGQPZ52U4BRIT3JBM2ZDKQE0JI2B">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5HM4H4H4OCDXISGFSIH34TBX2LZYIS0L02WNVLI3TBI1MEXK214M">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBMNYGMIQFWOCELHI2T0SEGVXQGNZO0MDNTVCQN3LINJZMUZPJLC">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPIEDNA4RO0B3CBSVC0VHSTQGVISD2YKFSS0KVLH5K3T5FH5IXTSN">Width Constraint (Min=5mil) (Max=500mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDT215RDI1XF2NB5ISXCCLDX4WNPKY2NZ31GMU2AEWGCP1VNXSHSHI">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0PNAIQZ2HFX4PZLGZXBR5PC05OKNZDB5Q4ZY2HBOBI3K2OG4PJHD">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=15mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB1DU322E3AWXGD3LLCGQUILFGE5XADLA1ZLWKJPTXMEOQSX35YGB">Hole Size Constraint (Min=10mil) (Max=800mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMY0WM4PIQ1MKJPX3YEXZO20DZLJKEREP2LVQL1CVGG1CQXFKM4IN">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSU1JAINM3YYJFDS3SHRF35TPUGM4IOYJZBLDYBJVXWHOCN4OXDPG">Minimum Solder Mask Sliver (Gap=5mil) (All),(All)</a></td>
+<td class="column2">23</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDK4QGEE01SJGMGJFUIYUZVNPAXHZ0UJJ354XNENFNLUZ14EUCUGLG">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4FFAVQPVSKXBVMCRAEERFZFMCY4QBLMN5DRYHJZTPD31MBWZXH">Silk to Silk (Clearance=5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAYIJ52X25IB4JRY2B5X4LZO1GIFMP4W4P21T2CJP2U5IUV1G30VE">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1NS1XXQCF1N0MKHJ3R5C4PQNTBAMKSMRJHL21KDUWTJ2O025YJPJ">Matched Lengths(Tolerance=25mil) (InNetClass('mSATARx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2BGLWSPT44GENLTFUE3KL5MGPJ0Y431SOXKO1VH1SSNEDG05USDL">Matched Lengths(Tolerance=5mil) (InNetClass('I210Tx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQU01JRDS0LI2JGTJO0JXEUQ00LVLBF3ZVER3I3IA5NMOLSYKZ3YP">Matched Lengths(Tolerance=5mil) (InNetClass('I210Rx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVWISDV3XKWOWHQZIVGUOJOESTFFYFDNUZUPZAOKM3U3MAFAY1RE">Matched Lengths(Tolerance=5mil) (InNetClass('PCIETx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCIHSZ0HPACZ5CWUCV4BS4O5WSICZXSS0C0WQ0OMGR3H2EUU42MHH">Matched Lengths(Tolerance=5mil) (InNetClass('PCIERx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNBXOILQORWXBP3MLRQL4N4YXGISQNCPXVZKX3JFNSSCJ0FUYAWAN">Matched Lengths(Tolerance=25mil) (InNetClass('mSATATx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHFHNVBWKA2PBMVH1MKZHNJR42DJGY0DGLJNV5CB3RZQCZFRCZ1SK">Matched Lengths(Tolerance=25mil) (InNetClass('PCIECLK'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXDJPZG5CDHOPDMVZJKI3RZPTZCS0Q4OQJHYVHPXFSQDPHAELVF">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">23</td>
+</tr>
+</table><br><a name="IDSU1JAINM3YYJFDS3SHRF35TPUGM4IOYJZBLDYBJVXWHOCN4OXDPG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=5mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3382.229mil|Location2.X=3388.479mil|Location1.Y=2786.111mil|Location2.Y=2792.361mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3382.229mil|Location2.X=3388.479mil|Location1.Y=2786.111mil|Location2.Y=2792.361mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.661mil &lt; 5mil) Between Pad C10-1(3400.708mil,2775mil) on Top Layer And Pad C10-2(3370mil,2775mil) on Top Layer [Top Solder] Mask Sliver [0.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4278.765mil|Location2.X=4285.015mil|Location1.Y=3074.489mil|Location2.Y=3080.739mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4278.765mil|Location2.X=4285.015mil|Location1.Y=3074.489mil|Location2.Y=3080.739mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.448mil &lt; 5mil) Between Pad C15-1(4263.78mil,3095mil) on Top Layer And Pad C15-2(4300mil,3095mil) on Top Layer [Top Solder] Mask Sliver [1.448mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.521mil|Location2.X=3617.771mil|Location1.Y=3052.639mil|Location2.Y=3058.889mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.521mil|Location2.X=3617.771mil|Location1.Y=3052.639mil|Location2.Y=3058.889mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.661mil &lt; 5mil) Between Pad C6-1(3599.292mil,3070mil) on Top Layer And Pad C6-2(3630mil,3070mil) on Top Layer [Top Solder] Mask Sliver [0.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2858.08mil|Location2.X=2864.33mil|Location1.Y=3379.197mil|Location2.Y=3385.447mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2858.08mil|Location2.X=2864.33mil|Location1.Y=3379.197mil|Location2.Y=3385.447mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.66mil &lt; 5mil) Between Pad C7-1(2845mil,3365mil) on Top Layer And Pad C7-2(2845mil,3399.644mil) on Top Layer [Top Solder] Mask Sliver [0.66mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2585.087mil|Location2.X=2591.337mil|Location1.Y=3436.925mil|Location2.Y=3443.175mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2585.087mil|Location2.X=2591.337mil|Location1.Y=3436.925mil|Location2.Y=3443.175mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.822mil &lt; 5mil) Between Pad U1-1(2575.354mil,3430.71mil) on Top Layer And Pad U1-11(2577.322mil,3449.882mil) on Top Layer [Top Solder] Mask Sliver [1.822mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2577.088mil|Location2.X=2583.338mil|Location1.Y=3436.905mil|Location2.Y=3443.155mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2577.088mil|Location2.X=2583.338mil|Location1.Y=3436.905mil|Location2.Y=3443.155mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.862mil &lt; 5mil) Between Pad U1-1(2589.134mil,3423.78mil) on Top Layer And Pad U1-11(2577.322mil,3449.882mil) on Top Layer [Top Solder] Mask Sliver [1.862mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.851mil|Location2.X=2602.101mil|Location1.Y=3405.356mil|Location2.Y=3411.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.851mil|Location2.X=2602.101mil|Location1.Y=3405.356mil|Location2.Y=3411.606mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U1-1(2589.134mil,3423.78mil) on Top Layer And Pad U1-2(2608.818mil,3423.308mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2589.024mil|Location2.X=2595.274mil|Location1.Y=3456.6mil|Location2.Y=3462.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2589.024mil|Location2.X=2595.274mil|Location1.Y=3456.6mil|Location2.Y=3462.85mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.844mil &lt; 5mil) Between Pad U1-10(2577.322mil,3469.568mil) on Top Layer And Pad U1-11(2577.322mil,3449.882mil) on Top Layer [Top Solder] Mask Sliver [1.844mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2589.024mil|Location2.X=2595.274mil|Location1.Y=3476.285mil|Location2.Y=3482.535mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2589.024mil|Location2.X=2595.274mil|Location1.Y=3476.285mil|Location2.Y=3482.535mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U1-10(2577.322mil,3469.568mil) on Top Layer And Pad U1-9(2577.322mil,3489.252mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.536mil|Location2.X=2621.786mil|Location1.Y=3405.356mil|Location2.Y=3411.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.536mil|Location2.X=2621.786mil|Location1.Y=3405.356mil|Location2.Y=3411.606mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.843mil &lt; 5mil) Between Pad U1-2(2608.818mil,3423.308mil) on Top Layer And Pad U1-3(2631.456mil,3437.088mil) on Top Layer [Top Solder] Mask Sliver [1.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2616.457mil|Location2.X=2622.707mil|Location1.Y=3463.49mil|Location2.Y=3469.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2616.457mil|Location2.X=2622.707mil|Location1.Y=3463.49mil|Location2.Y=3469.74mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U1-3(2631.456mil,3437.088mil) on Top Layer And Pad U1-4(2633.424mil,3479.41mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2653.984mil|Location2.X=2660.234mil|Location1.Y=3463.49mil|Location2.Y=3469.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2653.984mil|Location2.X=2660.234mil|Location1.Y=3463.49mil|Location2.Y=3469.74mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U1-3(2660mil,3453.82mil) on Top Layer And Pad U1-4(2633.424mil,3479.41mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2640.205mil|Location2.X=2646.455mil|Location1.Y=3489.08mil|Location2.Y=3495.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2640.205mil|Location2.X=2646.455mil|Location1.Y=3489.08mil|Location2.Y=3495.33mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U1-4(2633.424mil,3479.41mil) on Top Layer And Pad U1-5(2631.456mil,3521.732mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2653.984mil|Location2.X=2660.234mil|Location1.Y=3489.08mil|Location2.Y=3495.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2653.984mil|Location2.X=2660.234mil|Location1.Y=3489.08mil|Location2.Y=3495.33mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U1-4(2633.424mil,3479.41mil) on Top Layer And Pad U1-5(2660mil,3505mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.536mil|Location2.X=2621.786mil|Location1.Y=3517.56mil|Location2.Y=3523.81mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.536mil|Location2.X=2621.786mil|Location1.Y=3517.56mil|Location2.Y=3523.81mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.843mil &lt; 5mil) Between Pad U1-5(2631.456mil,3521.732mil) on Top Layer And Pad U1-6(2608.818mil,3535.512mil) on Top Layer [Top Solder] Mask Sliver [1.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.851mil|Location2.X=2602.101mil|Location1.Y=3517.56mil|Location2.Y=3523.81mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.851mil|Location2.X=2602.101mil|Location1.Y=3517.56mil|Location2.Y=3523.81mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U1-6(2608.818mil,3535.512mil) on Top Layer And Pad U1-7(2589.134mil,3535.04mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2559.37mil|Location2.X=2565.62mil|Location1.Y=3515.645mil|Location2.Y=3521.895mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2559.37mil|Location2.X=2565.62mil|Location1.Y=3515.645mil|Location2.Y=3521.895mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.822mil &lt; 5mil) Between Pad U1-7(2575.354mil,3528.11mil) on Top Layer And Pad U1-8(2577.322mil,3508.938mil) on Top Layer [Top Solder] Mask Sliver [1.822mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2589.024mil|Location2.X=2595.274mil|Location1.Y=3515.665mil|Location2.Y=3521.915mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2589.024mil|Location2.X=2595.274mil|Location1.Y=3515.665mil|Location2.Y=3521.915mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.862mil &lt; 5mil) Between Pad U1-7(2589.134mil,3535.04mil) on Top Layer And Pad U1-8(2577.322mil,3508.938mil) on Top Layer [Top Solder] Mask Sliver [1.862mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2589.024mil|Location2.X=2595.274mil|Location1.Y=3495.97mil|Location2.Y=3502.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2589.024mil|Location2.X=2595.274mil|Location1.Y=3495.97mil|Location2.Y=3502.22mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.844mil &lt; 5mil) Between Pad U1-8(2577.322mil,3508.938mil) on Top Layer And Pad U1-9(2577.322mil,3489.252mil) on Top Layer [Top Solder] Mask Sliver [1.844mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4384.67mil|Location2.X=4390.92mil|Location1.Y=3389.647mil|Location2.Y=3395.897mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4384.67mil|Location2.X=4390.92mil|Location1.Y=3389.647mil|Location2.Y=3395.897mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U3-1(4400.59mil,3404.646mil) on Top Layer And Pad U3-2(4375mil,3404.646mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4359.08mil|Location2.X=4365.33mil|Location1.Y=3389.647mil|Location2.Y=3395.897mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4359.08mil|Location2.X=4365.33mil|Location1.Y=3389.647mil|Location2.Y=3395.897mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U3-2(4375mil,3404.646mil) on Top Layer And Pad U3-3(4349.41mil,3404.646mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4359.08mil|Location2.X=4365.33mil|Location1.Y=3320.355mil|Location2.Y=3326.605mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4359.08mil|Location2.X=4365.33mil|Location1.Y=3320.355mil|Location2.Y=3326.605mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U3-4(4349.41mil,3335.354mil) on Top Layer And Pad U3-5(4375mil,3335.354mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4384.67mil|Location2.X=4390.92mil|Location1.Y=3320.355mil|Location2.Y=3326.605mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\AutoCatFeederPCB\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4384.67mil|Location2.X=4390.92mil|Location1.Y=3320.355mil|Location2.Y=3326.605mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 5mil) Between Pad U3-5(4375mil,3335.354mil) on Top Layer And Pad U3-6(4400.59mil,3335.354mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
