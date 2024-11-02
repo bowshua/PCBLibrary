@@ -1,0 +1,53 @@
+Removed Pin From Net: NetName=NetC2_1 Pin=Jack1-1
+Removed Pin From Net: NetName=NetC2_1 Pin=Jack1-1
+Removed Pin From Net: NetName=GND Pin=Jack1-2
+Removed Pin From Net: NetName=GND Pin=Jack1-3
+Removed Pin From Net: NetName=NetC11_1 Pin=Motor Driver1-16
+Removed Pin From Net: NetName=NetC11_1 Pin=Motor Driver1-17
+Removed Pin From Net: NetName=GND Pin=TB1-2
+Removed Member From Class: ClassName=Motor Driver Member=C27
+Removed Member From Class: ClassName=Main Power Member=Jack1
+Removed Member From Class: ClassName=Motor Driver Member=R20
+Removed Member From Class: ClassName=Motor Driver Member=R21
+Removed Member From Class: ClassName=Motor Driver Member=R22
+Removed Member From Class: ClassName=Motor Driver Member=R23
+Added Component: Designator=DC1(Deans)
+Added Pin To Net: NetName=NetC2_1 Pin=DC1-1
+Added Pin To Net: NetName=NetC2_1 Pin=DC1-1
+Add Pin To Net: Unknown Pin: Pin DC1-2
+Added Pin To Net: NetName=GND Pin=TB1-4
+Added Pin To Net: NetName=NetMD1_2 Pin=MD1-2
+Added Pin To Net: NetName=NetMD1_2 Pin=Motor Driver1-16
+Added Net: Name=NetMD1_2
+Added Pin To Net: NetName=NetMD1_12 Pin=MD1-12
+Added Pin To Net: NetName=NetMD1_12 Pin=Motor Driver1-21
+Added Net: Name=NetMD1_12
+Added Pin To Net: NetName=NetMD1_13 Pin=MD1-13
+Added Pin To Net: NetName=NetMD1_13 Pin=Motor Driver1-22
+Added Net: Name=NetMD1_13
+Added Pin To Net: NetName=NetMD1_14 Pin=MD1-14
+Added Pin To Net: NetName=NetMD1_14 Pin=Motor Driver1-20
+Added Net: Name=NetMD1_14
+Added Pin To Net: NetName=NetMD1_16 Pin=MD1-16
+Added Pin To Net: NetName=NetMD1_16 Pin=Motor Driver1-17
+Added Net: Name=NetMD1_16
+Added Pin To Net: NetName=NetMD1_26 Pin=MD1-26
+Added Pin To Net: NetName=NetMD1_26 Pin=U4-12
+Added Net: Name=NetMD1_26
+Added Pin To Net: NetName=NetMD1_29 Pin=MD1-29
+Added Pin To Net: NetName=NetMD1_29 Pin=TB1-2
+Added Net: Name=NetMD1_29
+Added Pin To Net: NetName=NetMD1_30 Pin=MD1-30
+Added Pin To Net: NetName=NetMD1_30 Pin=TB1-3
+Added Net: Name=NetMD1_30
+Added Pin To Net: NetName=NetMD1_33 Pin=MD1-33
+Added Pin To Net: NetName=NetMD1_33 Pin=U4-11
+Added Net: Name=NetMD1_33
+Added Member To Class: ClassName=Motor Driver Member=Component C21 0.01uF
+Added Member To Class: ClassName=Main Power Member=Component DC1 Deans Connector
+Added Member To Class: ClassName=Motor Driver Member=Component R13 10kOhm
+Added Member To Class: ClassName=Motor Driver Member=Component R15 1MOhm
+Added Member To Class: ClassName=Motor Driver Member=Component R16 200mOhm
+Added Member To Class: ClassName=Motor Driver Member=Component R17 10kOhm
+Added Member To Class: ClassName=Motor Driver Member=Component R18
+Added Rule: Name=Schematic Supply Nets
