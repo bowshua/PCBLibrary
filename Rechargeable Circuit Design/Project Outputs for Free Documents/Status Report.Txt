@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [RechargeablePCB.PcbDoc]
+   Generated File[RechargeablePCB.TXT]
+   Generated File[RechargeablePCB-RectHoles.TXT]
+   Generated File[RechargeablePCB.LDP]
+   Generated File[RechargeablePCB.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 1:06:11 AM On 11/7/2024
