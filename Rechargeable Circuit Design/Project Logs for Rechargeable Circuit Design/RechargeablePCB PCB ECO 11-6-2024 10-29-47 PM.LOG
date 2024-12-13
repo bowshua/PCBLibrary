@@ -1,0 +1,58 @@
+Add Component: Footprint Not Found GRM32DR61C106KA01L
+Add Component: Footprint Not Found DIONM5127X229N
+Added Component: Designator=R1(RESC6331X80N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.bourns.com/data/global/pdfs/CRM0805_1206_2010.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CRM2512QJW-103ELF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-CRM2512QJW-103E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CRM2512QJW-103ELF?qs=8Wlm6%252BaMh8Rzg3bRHdWGsA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RESC6331X80N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.bourns.com/data/global/pdfs/CRM0805_1206_2010.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CRM2512QJW-103ELF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-CRM2512QJW-103E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CRM2512QJW-103ELF?qs=8Wlm6%252BaMh8Rzg3bRHdWGsA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R7(RESC6331X80N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.bourns.com/data/global/pdfs/CRM0805_1206_2010.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CRM2512QJW-103ELF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-CRM2512QJW-103E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CRM2512QJW-103ELF?qs=8Wlm6%252BaMh8Rzg3bRHdWGsA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RESC6331X80N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.bourns.com/data/global/pdfs/CRM0805_1206_2010.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CRM2512QJW-103ELF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-CRM2512QJW-103E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CRM2512QJW-103ELF?qs=8Wlm6%252BaMh8Rzg3bRHdWGsA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R9(RESC6331X80N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.bourns.com/data/global/pdfs/CRM0805_1206_2010.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CRM2512QJW-103ELF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-CRM2512QJW-103E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CRM2512QJW-103ELF?qs=8Wlm6%252BaMh8Rzg3bRHdWGsA%3D%3D"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin C2-1
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=NetB1_1 Pin=R1-2
+Added Pin To Net: NetName=NetB1_9 Pin=R5-1
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=NetIC1_10 Pin=R7-1
+Added Pin To Net: NetName=GND Pin=R7-2
+Added Pin To Net: NetName=NetIC1_7 Pin=R8-1
+Added Pin To Net: NetName=NetB1_2 Pin=R8-2
+Added Pin To Net: NetName=NetIC1_12 Pin=R9-1
+Added Pin To Net: NetName=NetR9_2 Pin=R9-2
+Add Class Member: Failed to add class member : Component C2 10uF 16V
+Add Class Member: Failed to add class member : Component D1 CDBA340L-G
+Added Member To Class: ClassName=Rechargeable Circuit Member=Component R1 CRM2512QJW-103ELF
+Added Member To Class: ClassName=Rechargeable Circuit Member=Component R5 CRM2512QJW-103ELF
+Added Member To Class: ClassName=Rechargeable Circuit Member=Component R7 CRM2512QJW-103ELF
+Added Member To Class: ClassName=Rechargeable Circuit Member=Component R8 CRM2512QJW-103ELF
+Added Member To Class: ClassName=Rechargeable Circuit Member=Component R9 CRM2512QJW-103ELF
