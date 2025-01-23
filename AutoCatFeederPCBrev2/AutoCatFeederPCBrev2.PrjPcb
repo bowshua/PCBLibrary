@@ -168,6 +168,40 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KFIGACFB
 
+[Document8]
+DocumentPath=Job1.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document9]
+DocumentPath=AutoCatFeederPCBrev2.BomDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for AutoCatFeederPCBrev2\AutoCatFeederPCBrev2.nsx
 DItemRevisionGUID=
@@ -178,6 +212,98 @@ DItemRevisionGUID=
 
 [GeneratedDocument3]
 DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Design Rule Check - Test Footprints.html
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\NC Drill\Test Footprints-Plated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\NC Drill\Test Footprints-RectHoles-Plated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\NC Drill\Test Footprints-RectHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Test Footprints-RectHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\NC Drill\Test Footprints.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Test Footprints.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for Free Documents\Gerber\Test Footprints.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GM
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\NC Drill\Test Footprints.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Test Footprints.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\Gerber\Test Footprints.REP
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for Free Documents\Gerber\Test Footprints.REP
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for AutoCatFeederPCBrev2\NC Drill\Test Footprints.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Test Footprints.TXT
 DItemRevisionGUID=
 
 [Configuration1]
